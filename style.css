@@ -1,0 +1,147 @@
+body {
+    font-family: "Poppins",Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e1d5f1;
+    border-radius: 10px;
+}
+
+.header h1 {
+    margin-bottom: 30px;
+    color: #6d3ea0;
+}
+
+.header p {
+    color: #555;
+}
+
+.team-section {
+    margin-top: 30px;
+}
+
+.team-section h2 {
+    text-align: center;
+    color: #6d3ea0;
+    margin-bottom: 20px;
+}
+
+.team-group {
+    margin-bottom: 40px;
+}
+
+.team-group h3 {
+    color: #6d3ea0;
+    background-color: #e1d5f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+}
+.team-member:hover{
+    box-shadow: 2px 2px 15px rgb(22, 22, 22);
+    transition: 2s;
+}
+
+.team-member img {
+    margin-top: 1rem;
+    width: 100px;
+    height: 100px;
+    /* border-radius: 10%; */
+    background-color: #ddd;
+}
+
+
+.team-member p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.team-member p:last-child {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+@media(max-width:1200px){
+    .container{
+        width: 90%;
+    }
+
+    .team-members{
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px){
+    .team-members{
+         flex-direction: column;
+         align-items: center;      
+    }
+
+    .team-member{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .team-member img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width:480px){
+    .header h1{
+        font-size: 1.5 rem;
+    }
+      
+        .header p{
+            font-size: 1.5 rem;
+        }
+
+        .team-members{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-member{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .team-member img{
+            width: 60px;
+            height: 60px;
+        }
+
+        .team-member p{
+            font-size: 0.9rem;
+        }
+
+        .team-member p:last-child{
+            font-size: 0.8rem;
+        }
+}
